@@ -9,9 +9,11 @@
 <!--  
 <meta charset="utf-8">
 -->
+
 <link href="<c:url value="/recources/css/home.css" />" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://localhost:8080/spring/recources/js/placeholder.js"></script>
 	<title>Home</title>
+	
 </head>
 <body>
 <form:form method="POST" commandName="user" action="check-user" class="box login">
@@ -26,8 +28,10 @@
 
 		</fieldset>
 
-		<footer> <label><input type="checkbox" tabindex="3">Keep me logged in</label> 
-			<input type="submit" class="btnLogin" value="Login" tabindex="4"> 
+		<footer> <form:checkbox path="admin" /> 
+		
+			<form:label path="admin">Admin</form:label> <input type="submit" class="btnLogin" value="login" >
+		
 		</footer>
 
 	</form:form>

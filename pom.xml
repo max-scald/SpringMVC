@@ -155,4 +155,5 @@
             </plugin>
         </plugins>
     </build>
+    <url>https://github.com/max-scald/MyProject.git</url>
 </project>
